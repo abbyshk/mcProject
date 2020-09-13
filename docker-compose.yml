@@ -1,0 +1,13 @@
+version: '3'
+services:
+  discovery:
+    build: discovery-service/
+    image: oggyos/discovery
+
+  gateway:
+    build: api-gateway/
+    image: oggyos/gateway
+
+  car-service:
+    build: car-service/
+    image: oggyos/car-service
